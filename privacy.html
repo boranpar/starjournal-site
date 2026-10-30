@@ -7,36 +7,109 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <main>
 <p class="lang"><a href="#tr">Türkçe</a> · <a href="#en">English</a></p>
 
 <article id="tr" lang="tr">
 <h1>Gizlilik</h1>
-<p class="date">Son güncelleme: 17 Ekim 2026</p>
+<p class="date">Son güncelleme: 30 Ekim 2026</p>
 <p>Star Journal kişisel bir günlüktür. Hesap yoktur, giriş yoktur, reklam yoktur. Yazdıklarını biz göremeyiz.</p>
+<p>Uygulamada kullanım analizi, çökme raporu ya da reklam aracı kullanmıyoruz. Bu sayfa aynı zamanda 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (KVKK) 10. maddesindeki aydınlatma metnidir: neyin nereye, neden gittiğini ve haklarını burada bulursun.</p>
+
+<h2>Veri sorumlusu</h2>
+<p>Star Journal'ı ve bu sayfayı Boran Parmaksız (Türkiye) geliştirir ve yayımlar. KVKK'daki veri sorumlusu odur. Gizlilikle ilgili her soru ve başvuru için: <a href="mailto:boranparmaksiz06@gmail.com">boranparmaksiz06@gmail.com</a>.</p>
 
 <h2>Yazdıkların</h2>
 <p>Başlık, metin, etiketler, his ve eklediğin fotoğraflar kaydedilmeden önce iPhone'unda AES-GCM ile şifrelenir. Anahtar senin cihazında ve iCloud Anahtar Zinciri'nde durur; bizde bir kopyası yoktur. Eşitleme açıksa şifreli veriler yalnız kendi iCloud hesabının özel veritabanına gider. Kurtarma anahtarını kaybedersen yazdıklarını biz de açamayız.</p>
+<p>Tek istisna Anı widget'ıdır: uygulama kilidi kapalıyken, ana ekrandaki Anı widget'ı geçmiş bir günün başlığını, ilk satırlarını ve küçültülmüş bir fotoğrafını gösterebilmek için bunları cihazındaki widget deposunda şifresiz tutar. Uygulama kilidini açarsan ya da o yazıyı kilitlersen widget'ta hiçbir yazı içeriği görünmez ve bu kopya silinir.</p>
 
-<h2>Topladığımız tek şey: satın alma geçmişi</h2>
-<p>Abonelik ve ömür boyu satın almalar Apple üzerinden yapılır. Aboneliğinin durumunu bilmek için RevenueCat hizmeti satın alma geçmişini işler; bu bilgi kimliğine bağlanmaz ve izleme için kullanılmaz. Analiz, çökme raporu ya da reklam aracı kullanmıyoruz.</p>
-
-<h2>Fotoğraflar</h2>
+<h2>Fotoğraflar ve kamera</h2>
 <p>Fotoğraf arşivin yalnız cihazında, o günün fotoğraflarını sana göstermek için okunur. Bir fotoğrafı yazına eklemedikçe hiçbir şey yüklenmez; eklenen fotoğraf yazınla aynı şekilde şifrelenir.</p>
+<p>Uygulamanın içinden kamerayla çektiğin fotoğraf, izin verirsen fotoğraf arşivine de kaydedilir; oradaki kopya Fotoğraflar uygulamasının kendi ayarlarına göre durur. Yaptığın gökyüzü posterlerini de istersen arşivine kaydedebilirsin.</p>
 
 <h2>Seçimine bağlı olanlar (başta kapalı)</h2>
 <ul>
-<li><strong>Hava durumu ve yer:</strong> açarsan, yeni bir yazı kaydederken yaklaşık konumun yalnız o anki hava durumunu sormak için Apple'a (WeatherKit) gider. Koordinat saklanmaz; yer adı ve hava, yazının içinde şifreli durur.</li>
+<li><strong>Hava durumu ve yer:</strong> açarsan, yeni bir yazıya başlarken yaklaşık konumun (yaklaşık bir kilometreye yuvarlanır) yalnız o anki hava durumunu sormak (Apple WeatherKit) ve bulunduğun yerin adını bulmak (Apple'ın coğrafi kodlaması) için Apple'a gider. Koordinat saklanmaz; yer adı ve hava, yazının içinde şifreli durur.</li>
 <li><strong>Apple Sağlık:</strong> açarsan, seçtiğin his her yazı için bir "anlık duygu" kaydı olarak Sağlık uygulamasına yazılır. Bu veri cihazındaki Sağlık'ta kalır; kilitli yazılar yazılmaz.</li>
-<li><strong>Bildirimler:</strong> hatırlatmalar cihazında kurulur ve hiçbir zaman yazının metnini göstermez.</li>
+<li><strong>Bildirimler:</strong> hatırlatmalar cihazında kurulur ve hiçbir zaman yazının metnini göstermez. Hatırlatma, o gün çektiğin bir fotoğrafı arşivinden küçük olarak gösterebilir; bunu Hatırlatma ayarlarındaki "Bugünün fotoğrafları" ile kapatabilirsin.</li>
 <li><strong>Face ID:</strong> uygulama kilidi Apple'ın cihaz üzerindeki doğrulamasını kullanır; yüz verisine erişmeyiz.</li>
 </ul>
 
+<h2>Cihazından çıkan bilgiler</h2>
+<p>Yazdıkların dışında cihazından yalnız aşağıdakiler çıkar. Her biri için ne olduğunu, neden işlendiğini, hukuki sebebini, kime gittiğini ve ne kadar kaldığını yazdık.</p>
+
+<h3>1. Satın alma ve abonelik durumu (RevenueCat)</h3>
+<ul>
+<li><strong>Ne:</strong> uygulamanın kurulumda oluşturduğu rastgele bir kullanıcı kimliği, Apple'ın bu uygulamaya özel verdiği cihaz kimliği (IDFV), App Store satın alma geçmişin (hangi plan, ne zaman, deneme mi, yenileniyor mu), mağaza ülken, cihaz modelin, iOS ve uygulama sürümün, dil tercihlerin. Her internet bağlantısında olduğu gibi IP adresin de RevenueCat'e ulaşır.</li>
+<li><strong>Neden:</strong> Premium'un açık olup olmadığını bilmek, satın almayı ve geri yüklemeyi doğrulamak; deneme ve abonelik sayılarını toplu olarak görmek ve kötüye kullanımı önlemek.</li>
+<li><strong>Hukuki sebep:</strong> abonelik sözleşmesinin kurulması ve ifası (KVKK m.5/2-c); toplu sayılar ve kötüye kullanımı önleme için meşru menfaatimiz (KVKK m.5/2-f).</li>
+<li><strong>Kime:</strong> RevenueCat, Inc. (ABD). RevenueCat bu bilgileri bizim adımıza ve talimatımızla işler; satın almayı doğrulamak için Apple'ın sunucularıyla konuşur.</li>
+<li><strong>Ne kadar:</strong> RevenueCat'i kullandığımız sürece. Kaydının silinmesini istersen bize yaz.</li>
+</ul>
+<p>Bu bilgi kimliğine bağlanmaz ve izleme için kullanılmaz: adın, e-postan ya da Apple Hesabın eklenmez. RevenueCat'in panelinde adını değil, yalnız rastgele kimliği ve satın alma kaydını görürüz. RevenueCat'in gizlilik politikası: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
+
+<h3>2. Ödeme (Apple)</h3>
+<p>Abonelik ve ömür boyu satın almalar Apple üzerinden yapılır. Ödemeyi Apple alır; kart bilgilerini, adını ya da Apple Hesabını görmeyiz. Apple bu işlemde kendi gizlilik politikasına göre çalışır: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</p>
+
+<h3>3. Hava durumu ve yer (Apple, yalnız açarsan)</h3>
+<ul>
+<li><strong>Ne:</strong> yeni bir yazıya başlarken, yaklaşık bir kilometreye yuvarlanmış konumun.</li>
+<li><strong>Neden:</strong> o anki hava durumunu ve bulunduğun yerin adını yazına eklemek.</li>
+<li><strong>Hukuki sebep:</strong> senin açtığın bir özelliği çalıştırmak, yani sözleşmenin ifası (KVKK m.5/2-c). Uygulamanın ayarlarından ya da iOS'un konum izninden istediğin an kapatabilirsin.</li>
+<li><strong>Kime:</strong> Apple (WeatherKit ve coğrafi kodlama). Konumun bize gelmez.</li>
+<li><strong>Ne kadar:</strong> koordinat uygulamada saklanmaz; Apple'daki kısmı Apple'ın politikasına bağlıdır.</li>
+</ul>
+
+<h3>4. Bize yazarsan</h3>
+<ul>
+<li><strong>Ne:</strong> e-posta adresin, mesajın ve eklediğin her şey.</li>
+<li><strong>Neden:</strong> sana cevap vermek, sorununu çözmek, KVKK başvurularını yanıtlamak.</li>
+<li><strong>Hukuki sebep:</strong> isteğini karşılamak (KVKK m.5/2-c ve m.5/2-f); KVKK başvurularında hukuki yükümlülüğümüz (KVKK m.5/2-ç).</li>
+<li><strong>Kime:</strong> e-posta kutumuz Gmail'de, yani Google'dadır (ABD).</li>
+<li><strong>Ne kadar:</strong> konu kapandıktan sonra en geç bir yıl içinde sileriz.</li>
+</ul>
+
+<h3>5. Bu site</h3>
+<p>Bu sayfalar GitHub Pages'te (GitHub, Inc., ABD) durur. Çerez, analiz aracı, dışarıdan yüklenen yazı tipi ya da betik yoktur. GitHub, sayfaları sunarken ziyaretçilerin IP adresini güvenlik için kaydeder; bu kayıtlar <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub'ın gizlilik bildirimine</a> bağlıdır. Hukuki sebep: sitenin güvenli çalışması için meşru menfaat (KVKK m.5/2-f).</p>
+
+<h2>Toplama yöntemi</h2>
+<p>Bilgiler elektronik ortamda toplanır: satın alma bilgileri uygulama açıldığında RevenueCat'in yazılım kiti aracılığıyla otomatik olarak; hava ve yer yalnız açtığında Apple'ın iOS'taki hizmetleriyle; e-posta bilgileri sen yazdığında; site kayıtları sayfayı açtığında GitHub'ın sunucularında.</p>
+
+<h2>Yurt dışına aktarım</h2>
+<p>Bu hizmetlerin sunucuları Türkiye dışındadır, bu yüzden yukarıdaki bilgiler yurt dışına aktarılır:</p>
+<ul>
+<li><strong>RevenueCat, Inc. (ABD):</strong> satın alma ve abonelik bilgileri.</li>
+<li><strong>Apple:</strong> ödeme Apple'ın kendi hizmetinde; hava ve yer yalnız açarsan; iCloud eşitlemesi kendi iCloud hesabında ve şifreli.</li>
+<li><strong>Google (ABD):</strong> bize yazdığın e-postalar.</li>
+<li><strong>GitHub, Inc. (ABD):</strong> bu sitenin ziyaret kayıtları.</li>
+</ul>
+
+<h2>Hakların</h2>
+<p>KVKK'nın 11. maddesine göre bize başvurarak şunları isteyebilirsin:</p>
+<ul>
+<li>Hakkında kişisel veri işlenip işlenmediğini öğrenmek,</li>
+<li>işlendiyse buna ilişkin bilgi istemek,</li>
+<li>neden işlendiğini ve bu amaca uygun kullanılıp kullanılmadığını öğrenmek,</li>
+<li>yurt içinde ya da yurt dışında kimlere aktarıldığını bilmek,</li>
+<li>eksik ya da yanlışsa düzeltilmesini istemek,</li>
+<li>KVKK'nın 7. maddesindeki şartlarla silinmesini ya da yok edilmesini istemek,</li>
+<li>düzeltme ya da silme yapıldıysa bunun, verinin aktarıldığı kişilere bildirilmesini istemek,</li>
+<li>yalnız otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonuç çıkmasına itiraz etmek,</li>
+<li>kanuna aykırı işleme yüzünden zarara uğradıysan zararın giderilmesini istemek.</li>
+</ul>
+<p>Başvurmak için <a href="mailto:boranparmaksiz06@gmail.com">boranparmaksiz06@gmail.com</a> adresine yazman yeterli.</p>
+<p>Yazdıklarını okuyamadığımız için elimizdeki tek kayıt RevenueCat'teki satın alma kaydındır; yazıların zaten senin cihazında ve iCloud hesabındadır. Seni adınla tanımadığımız için, kaydını bulabilmemiz için Apple'ın satın alma makbuzundaki sipariş numarasını (Order ID) yazman yeterli.</p>
+<p>Başvurunu en geç 30 gün içinde ve ücretsiz cevaplarız. Cevabımız seni tatmin etmezse ya da 30 gün içinde cevap alamazsan Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsin (<a href="https://www.kvkk.gov.tr">kvkk.gov.tr</a>): cevabı öğrendiğin günden başlayarak 30 gün, her hâlde başvurundan başlayarak 60 gün içinde (KVKK m.14).</p>
+
 <h2>Silmek ve dışa aktarmak</h2>
-<p>Yazılarını uygulamadan dışa aktarabilir ya da silebilirsin. Uygulamayı ve iCloud'daki verisini (Ayarlar › Apple Hesabı › iCloud) silmek her şeyi kaldırır.</p>
+<p>Yazılarını uygulamadan dışa aktarabilir ya da silebilirsin. Uygulamayı ve iCloud'daki verisini (Ayarlar › Apple Hesabı › iCloud) silmek yazdığın her şeyi kaldırır. Satın alma kaydın Apple'da ve RevenueCat'te kalır; RevenueCat'teki kaydının silinmesini istersen bize yaz.</p>
 
 <h2>Çocuklar</h2>
 <p>Star Journal çocuklardan bilerek veri toplamaz; zaten hiç kimseden içerik toplamaz.</p>
+
+<h2>Değişiklikler</h2>
+<p>Bu sayfa değişirse yukarıdaki tarihi güncelleriz.</p>
 
 <h2>İletişim</h2>
 <p>Sorular için <a href="support.html">destek sayfası</a>.</p>
@@ -44,31 +117,105 @@
 
 <article id="en" lang="en">
 <h1>Privacy</h1>
-<p class="date">Last updated: 17 October 2026</p>
+<p class="date">Last updated: 30 October 2026</p>
 <p>Star Journal is a private journal. There is no account, no login and no advertising. We cannot read what you write.</p>
+<p>The app uses no usage analytics, crash reporting or advertising tools. This page is also our notice under the EU General Data Protection Regulation (GDPR) and Türkiye's data protection law (KVKK): what leaves your device, why, and your rights.</p>
+
+<h2>Who is responsible</h2>
+<p>This app and this page are made and published by Boran Parmaksız (Türkiye), the controller of your personal data. For any privacy question or request: <a href="mailto:boranparmaksiz06@gmail.com">boranparmaksiz06@gmail.com</a>.</p>
 
 <h2>What you write</h2>
 <p>Titles, text, tags, moods and attached photos are encrypted on your iPhone with AES-GCM before they are stored. The key stays on your device and in your iCloud Keychain; we have no copy. With sync on, the encrypted data goes only to the private database of your own iCloud account. If you lose your recovery key, we cannot open your entries either.</p>
+<p>The one exception is the Memory widget: while the app lock is off, the Home Screen Memory widget keeps the title, the first lines and a small photo of one past day unencrypted in the widget store on your device, so it can show them. Turn the app lock on, or lock that entry, and the widget shows no entry content and that copy is removed.</p>
 
-<h2>The only thing collected: purchase history</h2>
-<p>Subscriptions and the lifetime purchase are made through Apple. RevenueCat processes purchase history so the app knows your subscription status; it is not linked to your identity and is not used for tracking. We use no analytics, crash reporting or advertising tools.</p>
-
-<h2>Photos</h2>
+<h2>Photos and camera</h2>
 <p>Your photo library is read only on your device, to show you the photos of a given day. Nothing is uploaded unless you attach a photo to an entry; an attached photo is encrypted like the entry.</p>
+<p>A photo you take with the camera inside the app is also saved to your photo library if you allow it; that copy follows the Photos app's own settings. You can also save the sky posters you make to your library.</p>
 
 <h2>Optional (off until you turn them on)</h2>
 <ul>
-<li><strong>Weather and place:</strong> when on, saving a new entry sends your approximate location to Apple (WeatherKit) only to ask for the current weather. Coordinates are never stored; the place name and weather are kept encrypted inside the entry.</li>
+<li><strong>Weather and place:</strong> when on, starting a new entry sends your approximate location (rounded to about a kilometre) to Apple only to ask for the current weather (WeatherKit) and the name of the place you are in (Apple's geocoder). Coordinates are never stored; the place name and weather are kept encrypted inside the entry.</li>
 <li><strong>Apple Health:</strong> when on, the mood you pick is written to Health as a momentary "state of mind" for each entry. It stays in Health on your device; locked entries are never written.</li>
-<li><strong>Notifications:</strong> reminders are scheduled on your device and never show the text of an entry.</li>
+<li><strong>Notifications:</strong> reminders are scheduled on your device and never show the text of an entry. A reminder can show a small photo you took that day from your library; turn this off with "Today's photos" in the reminder settings.</li>
 <li><strong>Face ID:</strong> the app lock uses Apple's on-device authentication; we never see face data.</li>
 </ul>
 
+<h2>What leaves your device</h2>
+<p>Apart from your encrypted entries, only the following leaves your device. For each one: what it is, why, the legal basis, who receives it and how long it is kept.</p>
+
+<h3>1. Purchases and subscription status (RevenueCat)</h3>
+<ul>
+<li><strong>What:</strong> a random user ID the app creates when installed, the device ID Apple gives this app (IDFV), your App Store purchase history (which plan, when, trial or not, renewing or not), your store country, device model, iOS and app version, and language preferences. As with any connection, your IP address also reaches RevenueCat.</li>
+<li><strong>Why:</strong> to know whether Premium is on, to verify purchases and restores, to see trial and subscription numbers in aggregate, and to prevent abuse.</li>
+<li><strong>Legal basis:</strong> performing the contract you enter when you buy Premium (GDPR Art. 6(1)(b)); our legitimate interest in aggregate sales numbers and abuse prevention (Art. 6(1)(f)).</li>
+<li><strong>Who:</strong> RevenueCat, Inc. (United States), which processes this on our behalf and on our instructions, and checks purchases with Apple's servers.</li>
+<li><strong>How long:</strong> as long as we use RevenueCat. Write to us to have your record deleted.</li>
+</ul>
+<p>It is not linked to your identity and is not used for tracking: no name, e-mail or Apple Account is added. In RevenueCat's dashboard we see a random ID and a purchase record, never your name. RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
+
+<h3>2. Payment (Apple)</h3>
+<p>Subscriptions and the lifetime purchase are made through Apple. Apple takes the payment; we never see your card, your name or your Apple Account. Apple handles this under its own privacy policy: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</p>
+
+<h3>3. Weather and place (Apple, only if you turn it on)</h3>
+<ul>
+<li><strong>What:</strong> your location, rounded to about a kilometre, when you start a new entry.</li>
+<li><strong>Why:</strong> to add the current weather and the name of the place to your entry.</li>
+<li><strong>Legal basis:</strong> providing a feature you asked for (GDPR Art. 6(1)(b)). Turn it off at any time in the app's settings or in iOS location settings.</li>
+<li><strong>Who:</strong> Apple (WeatherKit and geocoding). Your location never reaches us.</li>
+<li><strong>How long:</strong> the app never stores the coordinates; Apple's side follows Apple's policy.</li>
+</ul>
+
+<h3>4. If you write to us</h3>
+<ul>
+<li><strong>What:</strong> your e-mail address, your message and anything you attach.</li>
+<li><strong>Why:</strong> to answer you, fix your problem and handle data protection requests.</li>
+<li><strong>Legal basis:</strong> answering your request (GDPR Art. 6(1)(b) and (f)); our legal obligation for data protection requests (Art. 6(1)(c)).</li>
+<li><strong>Who:</strong> our mailbox is on Gmail, run by Google (United States).</li>
+<li><strong>How long:</strong> deleted at the latest one year after the matter is closed.</li>
+</ul>
+
+<h3>5. This website</h3>
+<p>These pages are hosted on GitHub Pages (GitHub, Inc., United States). There are no cookies, analytics, external fonts or scripts. GitHub logs visitors' IP addresses for security when it serves the pages, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. Legal basis: legitimate interest in running the site securely (GDPR Art. 6(1)(f)).</p>
+
+<h2>How it is collected</h2>
+<p>Electronically: purchase data automatically through RevenueCat's software kit when the app opens; weather and place only when you turn them on, through Apple's services in iOS; e-mail data when you write to us; site logs on GitHub's servers when you open a page.</p>
+
+<h2>Is any of this required?</h2>
+<p>Only the purchase data: without it the app cannot sell or check Premium. Everything optional above works only if you turn it on, and the app works without it.</p>
+
+<h2>Automated decisions</h2>
+<p>The app suggests a mood from your words using word lists on your device. Nothing is sent, and no decision with legal or similarly significant effects is made about you.</p>
+
+<h2>International transfers</h2>
+<p>We are based in Türkiye, outside the EU and the EEA, and the services above run outside both:</p>
+<ul>
+<li><strong>RevenueCat, Inc. (United States):</strong> under RevenueCat's <a href="https://www.revenuecat.com/dpa">Data Processing Addendum</a>, which includes the EU Standard Contractual Clauses (controller to processor) and the UK Addendum.</li>
+<li><strong>Apple:</strong> payments under Apple's own terms; weather and place only if you turn them on; iCloud sync to your own iCloud account, encrypted.</li>
+<li><strong>Google (United States):</strong> e-mails you send us.</li>
+<li><strong>GitHub, Inc. (United States):</strong> this site's visit logs.</li>
+</ul>
+
+<h2>Your rights</h2>
+<p>Wherever you live, you can ask us to:</p>
+<ul>
+<li>tell you whether we hold data about you and give you a copy (access),</li>
+<li>correct it (rectification),</li>
+<li>delete it (erasure),</li>
+<li>limit how it is used (restriction),</li>
+<li>give it to you in a portable format (portability),</li>
+<li>stop using it where we rely on our legitimate interest (objection).</li>
+</ul>
+<p>Write to <a href="mailto:boranparmaksiz06@gmail.com">boranparmaksiz06@gmail.com</a>. Because we cannot read what you write, the only record we hold is your purchase record at RevenueCat; your entries are already on your device and in your iCloud account. We do not know you by name, so include the order number (Order ID) from Apple's purchase receipt and we can find your record.</p>
+<p>We answer free of charge within one month (within 30 days under KVKK). You can also complain to the data protection authority where you live or work (<a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en">list of EU authorities</a>); in Türkiye, the Personal Data Protection Board (<a href="https://www.kvkk.gov.tr">kvkk.gov.tr</a>).</p>
+
 <h2>Deleting and exporting</h2>
-<p>You can export or delete your entries in the app. Deleting the app and its iCloud data (Settings › Apple Account › iCloud) removes everything.</p>
+<p>You can export or delete your entries in the app. Deleting the app and its iCloud data (Settings › Apple Account › iCloud) removes everything you wrote. Your purchase record stays with Apple and RevenueCat; write to us to have the RevenueCat record deleted.</p>
 
 <h2>Children</h2>
 <p>Star Journal does not knowingly collect data from children; it collects no content from anyone.</p>
+
+<h2>Changes</h2>
+<p>If this page changes, we update the date at the top.</p>
 
 <h2>Contact</h2>
 <p>Questions: see the <a href="support.html">support page</a>.</p>
